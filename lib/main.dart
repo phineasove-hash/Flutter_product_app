@@ -5,12 +5,10 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Products',
-      home: ProductListoriginal(),
-    );
+    return MaterialApp(title: 'Products', home: ProductListoriginal());
   }
 }
 
@@ -20,13 +18,13 @@ class ProductListoriginal extends StatelessWidget {
     "Laptop",
     "Tablet",
     "Watch",
-    "Headphones",
+    "Headphone",
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Products")),
+      appBar: AppBar(title: const Text("Chats")),
       body: ListView(
         children: const [
           ListTile(
@@ -44,8 +42,8 @@ class ProductListoriginal extends StatelessWidget {
           ListTile(
             leading: CircleAvatar(child: Icon(Icons.person)),
             title: Text("Anania"),
-            subtitle: Text("How was your day ?"),
-            trailing: Text("1:50 PM"),
+            subtitle: Text("No , I'm new in this city"),
+            trailing: Text("2:20 PM"),
           ),
           ListTile(
             leading: CircleAvatar(child: Icon(Icons.person)),
@@ -56,13 +54,13 @@ class ProductListoriginal extends StatelessWidget {
           ListTile(
             leading: CircleAvatar(child: Icon(Icons.person)),
             title: Text("Stephane"),
-            subtitle: Text("No I'm new in this city"),
-            trailing: Text("2:20 PM"),
+            subtitle: Text("Good nigth"),
+            trailing: Text("1:55 PM"),
           ),
           ListTile(
             leading: CircleAvatar(child: Icon(Icons.person)),
             title: Text("Matali"),
-            subtitle: Text("I'm comming bro"),
+            subtitle: Text("I'm comming guys"),
             trailing: Text("6:00 PM"),
           ),
         ],
